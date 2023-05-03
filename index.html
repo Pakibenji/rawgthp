@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test_WebPack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <link rel="icon" type="image/x-icon" href="./src/assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- <a href="#home">Home</a> <br>
+    <a href="#pagelist">PageList</a><br>
+    <a href="#pagedetail">PageDetail</a><br> 
+    <a href="#pagelist/borderlands">PageList borderlands</a> -->
+
+
+    <div class="heading--top">
+      <a href="#pagelist/">
+        <h1 class="a--underlined" >The Hyper Progame</h1>
+      </a>
+      <div class="search-module">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+        <input type="text" id="site-search" placeholder="Find a game...">
+      </div>
+    </div>
+    <div class="heading--bottom">
+      <h1 class="heading--bottom__title">Welcome,</h1>
+      <p class="heading--bottom__paragraph">
+        The Hyper Progame is the world’s premier event for computer and video games and related products. At The Hyper
+        Progame, the video game industry’s top talent pack the Los Angeles Convention Center, connecting tens of thousands
+        of the best, brightest, and most innovative in the interactive entertainment industry. For three exciting days,
+        leading-edge companies, groundbreaking new technologies, and never-before-seen products will be showcased. The Hyper
+        Progame connects you with both new and existing partners, industry executives, gamers, and social influencers
+        providing unprecedented exposure to the entire video game industry, all under one woof. 
+      </p>
+    </div>
+    <div class="games">
+      <div class="games--dropdown">
+        <label for="platforms">Platform:&nbsp;</label>
+        <select id="platform" name="platform" onchange="window.location.href=`#pagelist/&platforms=${this.value}`">
+          <option value="">Any</option>
+          <option value="1">PC</option>
+          <option value="18">PlayStation</option>
+          <option value="3">Xbox</option>
+          <option value="5">MacOs</option>
+          <option value="7">Nintendo</option>
+          <option value="8">Android</option>
+        </select>
+        <div class="games--dropdownlogos">
+        </div>
+      </div>
+      <section id="pageContent">Choisissez un lien</section>
+    </div>
+    <div class="game-more">
+      <button id="show-more" >Show more</button>
+    </div>
+    <div class="rectangle" style="width: 139px; height: 10px; left: 50px; top: 1566px; background: #D20A32;"></div>
+    <div class="footer">
+     <a href="https://github.com/profprogrammeur?tab=repositories"> <p>ProfProgrammeur @ MMXXII - Pure fiction</p></a>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/09df9c0f6f.js" crossorigin="anonymous"></script>
+
+    <script src="./dist/bundle.js"></script>
+    <!-- <script src="" async defer></script> -->
+  </body>
+</html>
